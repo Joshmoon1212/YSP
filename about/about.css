@@ -1,35 +1,13 @@
 body::before{
     display: block;
     content: '';
-    height: 90px;
-}
-
-.bg{
-    background-image: url(image/download.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@media only screen and (min-width: 768px){
- .news-input{
-    width:50px;
- }
+    Height: 80px;
 }
 
 .logo{
     width :180px;
     margin-left: 5;
 }
-
-#nav-item1{
-    color: dodgerblue;
-}
-
-a.navlink:hover {
-    border-bottom: 2px solid dodgerblue;
-    border-top: 2px solid dodgerblue;
-}
-
 
 @media only screen and (min-width: 768px){
     .logo{
@@ -43,6 +21,24 @@ a.navlink:hover {
     }
 }
 
+.bg{
+    background-image: url(/about/image/whoo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    font-size: 80px;
+    font-family: Lucida Console;
+}
+
+#nav-item1{
+    color: dodgerblue;
+}
+
+a.navlink:hover {
+    border-bottom: 2px solid dodgerblue;
+    border-top: 2px solid dodgerblue;
+}
+
 @media only screen and (max-width: 500px){
     .container{
        display: block;
@@ -51,37 +47,45 @@ a.navlink:hover {
     }
 }
 
-.ig1:hover{
-    border: 3px dodgerblue solid;
-    border-radius: 5px;
+.text-start{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.ig1>img{
-    border-radius: 5px;
+.immg{
+    width: 50px;
 }
 
-.nn1:hover{
-    opacity: 0.7;
-}
-.nn2:hover{
-    opacity: 0.7;
-}
-.nn3:hover{
-    opacity: 0.7;
-}
-.nn4:hover{
-    opacity: 0.7;
+.hyo1{
+    width: 40%;
 }
 
-.ficn{
-    font-size: 15px;
-    padding-top: 10px;
+.hyo2{
+    width: 40%;
 }
 
-.ficn i{
-padding-bottom: 11px ;
+.hy{
+    margin-bottom: 20px;
 }
 
+.hy .fs-5{
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 770px){
+    .more-about{
+        text-align: center;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;        
+        }
+
+    .hyo1{
+        width: 70%;
+    }
+}
 .ficnl{
     padding: 5px;
 }
@@ -116,12 +120,4 @@ padding-bottom: 11px ;
 
 .ficn i{
     padding-top: 20px;
-    font-size: 12px;
-}
-
-@media only screen and (max-width: 600px){
-    #all{
-       padding-left: 30px;
-       padding-right: 10px;
-    }
 }

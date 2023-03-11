@@ -1,35 +1,13 @@
 body::before{
     display: block;
     content: '';
-    height: 90px;
-}
-
-.bg{
-    background-image: url(image/download.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@media only screen and (min-width: 768px){
- .news-input{
-    width:50px;
- }
+    Height: 80px;
 }
 
 .logo{
     width :180px;
     margin-left: 5;
 }
-
-#nav-item1{
-    color: dodgerblue;
-}
-
-a.navlink:hover {
-    border-bottom: 2px solid dodgerblue;
-    border-top: 2px solid dodgerblue;
-}
-
 
 @media only screen and (min-width: 768px){
     .logo{
@@ -43,6 +21,24 @@ a.navlink:hover {
     }
 }
 
+.bg{
+    background-image: url(/location/Loc-image/abstract.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    font-size: 80px;
+    font-family: Lucida Console;
+}
+
+#nav-item1{
+    color: dodgerblue;
+}
+
+a.navlink:hover {
+    border-bottom: 2px solid dodgerblue;
+    border-top: 2px solid dodgerblue;
+}
+
 @media only screen and (max-width: 500px){
     .container{
        display: block;
@@ -51,35 +47,22 @@ a.navlink:hover {
     }
 }
 
-.ig1:hover{
-    border: 3px dodgerblue solid;
-    border-radius: 5px;
+
+
+@media only screen and (max-width: 500px){
+    .where{
+        font-size: 30px;
+    }
 }
 
-.ig1>img{
-    border-radius: 5px;
+
+.add{
+    padding: 10px;
+    margin-top: 20px;
 }
 
-.nn1:hover{
-    opacity: 0.7;
-}
-.nn2:hover{
-    opacity: 0.7;
-}
-.nn3:hover{
-    opacity: 0.7;
-}
-.nn4:hover{
-    opacity: 0.7;
-}
-
-.ficn{
-    font-size: 15px;
-    padding-top: 10px;
-}
-
-.ficn i{
-padding-bottom: 11px ;
+.add > p{
+    color: white;
 }
 
 .ficnl{
@@ -119,9 +102,3 @@ padding-bottom: 11px ;
     font-size: 12px;
 }
 
-@media only screen and (max-width: 600px){
-    #all{
-       padding-left: 30px;
-       padding-right: 10px;
-    }
-}
