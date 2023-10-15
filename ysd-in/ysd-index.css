@@ -47,49 +47,72 @@ a.navlink:hover {
         display: none;
     }
 }
+.bg{
+    background-image: url(/ysd-in/Immgee/herrro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    font-size: 80px;
+    font-family: Lucida Console;
+}
 
-@media only screen and (max-width: 500px){
-    .container{
-       display: block;
-       width: 100%;
-       align-content: space-around;
+/*weekly meeting content*/
+.gg{
+    background-color: #d6e0e0;
+    width: 100%;
+}
+
+.g1{
+background-color: gray;
+border-bottom: 1px solid #424141;
+}
+.gg1{
+    width: 40%;
+}
+.g1 a{
+    text-decoration: none;
+    color: white;
+}
+.g1:hover{
+        background-color: dodgerblue;
+}
+
+.g1 img{
+    width: 50px;
+    margin-right: 1%;
+}
+
+.hyo1{
+    width: 40%;
+}
+
+@media only screen and (max-width: 670px){
+    .more-about{
+        text-align: center;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;        
+        }
+        .hyo1 img{
+            text-align: center;
+        }
+        
+            .hyo1{
+                width: 80%;
+                
+            }
+            .gg1{
+                width: 90%;
+            }
+/*Hero heading*/
+    .where{
+        font-size: x-large;
     }
 }
 
-.ig1:hover{
-    border: 3px dodgerblue solid;
-    border-radius: 5px;
-}
-
-.ig1>img{
-    border-radius: 5px;
-}
-
-/*logo session*/
-.cq{
-    border-radius: 15px;
-}
-
-.nn1:hover{
-    opacity: 0.7;
-}
-.nn2:hover{
-    opacity: 0.7;
-}
-.nn3:hover{
-    opacity: 0.7;
-}
-.nn4:hover{
-    opacity: 0.7;
-}
-
-.double{
-    background-color: #d6e0e0;
-    padding-bottom: 15px;
-}
-
-
-/*Footer styling*/
+/*Footer Styling*/
 .ficn{
     font-size: 15px;
     padding-top: 10px;
@@ -141,48 +164,3 @@ padding-bottom: 11px ;
     font-size: 12px;
 }
 
-@media only screen and (min-width: 770px){
-    .ngn{
-        display: none;
-    }
-}
-@media only screen and (max-width: 769px){
-    .un{
-        display: none;
-    }
-}
-
-
-@media only screen and (max-width: 600px){
-    #all{
-       padding-left: 30px;
-       padding-right: 10px;
-    }
-}
-
-.g1g{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-}
-
-.modal-ttl{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.mdl-h3{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.this-mdl{
-    background-image: url(/image/youths.jpg);
-}
-
-.modal-footer{
-    text-decoration: none;
-    font-size: 13px;
-}
-
-.g2g{
-    width: 90%;
-}

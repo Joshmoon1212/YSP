@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+  
 body::before{
     display: block;
     content: '';
@@ -33,7 +37,7 @@ body::before{
 }
 
 .bg{
-    background-image: url(/about/image/whoo.jpg);
+    background-image: url(/image/youths.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 45vh;
@@ -58,48 +62,30 @@ a.navlink:hover {
     }
 }
 
-.text-start{
-    font-size: 13px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.wedo{
+    color: rgb(101, 160, 215);
 }
 
-.immg{
-    width: 50px;
-}
-
-.hyo1{
-    width: 40%;
-}
-
-.hyo2{
-    width: 40%;
-}
-
-.hy{
-    margin-bottom: 20px;
-}
-
-.hy .fs-5{
-    font-weight: 500;
-}
-
-@media only screen and (max-width: 770px){
-    .more-about{
-        text-align: center;
-        align-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        flex-direction: column;        
-        }
-
-
-
-    .hyo2{
-        width: 70%;
+  .mainc {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .mma {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 30%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 765px) {
+    .mma {
+      flex: 100%;
     }
-}
-.ficnl{
+  }
+
+  .ficnl{
     padding: 5px;
 }
 

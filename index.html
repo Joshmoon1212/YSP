@@ -11,10 +11,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-
+    <section id="mybody">
   <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-  <div class="container">
+  <div class="container align-item-center">
         <img src="./image/YSPng.png" alt="logo" class="logo">
           <div class="navi text-light"><span class="text-warning ng">NG</span> </div>
         <button 
@@ -34,25 +34,24 @@
                 <a href="/about/about.html" class="nav-link navlink">ABOUT US</a>
               </li>
               <li class="nav-item">
-                  <a href="../count/countdown.html" class="nav-link navlink">WHO WE ARE</a>
+                  <a href="/wedo/wedo.html" class="nav-link navlink">WHAT WE DO</a>
               </li>
               <li class="nav-item">
-                  <a href="#whatwedo" class="nav-link navlink">WHAT WE DO</a>
-              </li>
+                <a href="# where" class="nav-link navlink">EVENTS</span></a>
+            </li>
               <li class="nav-item">
                   <a href="./location/lacate.html" class="nav-link navlink">WHERE WE ARE</a>
               </li>
               <li class="nav-item">
-                  <a href="# where" class="nav-link navlink">JOIN US</span></a>
-              </li>
+                <a href="../count/countdown.html" class="nav-link navlink">CONTACT US</a>
+            </li>
               <li class="nav-item text-danger">
-                  <a href="# where" class="nav-link navlink"><span class="text-danger">YSD</span></a>
+                  <a href="/ysd-in/ysd-index.html" class="nav-link navlink"><span class="text-danger">YSD</span></a>
               </li>
           </ul>
       </div>
   </div>
 </nav>
-
 
 
 
@@ -65,25 +64,143 @@
                     <p class="lead" my-4>Empowering youths to become global citizens through filial piety and living for
                         the sake of others
                     </p>
-                    <button class="btn btn-primary btn-lg">Join now </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Join Us
+                    </button>
+
+<!-- Modal -->
+<div class=" this-mdl modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/image/YSP+Logo.png" alt="" class="w-25">
+        <h1 class="modal-ttl modal-title fs-3 text-dark px-4" id="staticBackdropLabel">Membership Sign-up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <section>
+        <p class="mdl">
+          Welcome to our membership sign up for the International Association of 
+          Youth and Students for Peace! 
+          Join a network of peace makers from around the world striving to better
+           communities and bring about sustainable peace together.
+        </p>
+        <h4 class="mdl-h3">Mission Statement</h3>
+        <p class="md2">
+          To advance world peace by empowering youth and students to become global 
+          citizens through character education and peace projects supporting the UN 
+          Sustainable Development Goals
+        </p>
+        <p>
+          Values:<b> RISE</b>
+            <ul>
+              <li><b>R</b>esposibility</li>
+              <li><b>I</b>ntergrity</li>
+              <li><b>S</b>ervice</li>
+              <li><b>E</b>mpathy</li>
+            </ul>
+        </p>
+      </section>
+      <hr/>
+      <section>
+        <p>
+          To join our Youth and Students for Peace membership and network please confirm your commitment to the following statements below and fill in the required fields.
+        </p>
+        <P>
+          I agree with IAYSP’s values of responsibility, integrity, service and empathy, and will strive to practice them in my daily life to become a global citizen that embodies a culture of peace.
+          <div class="col_half">
+            <div class="input_field"> <span><i aria-hidden="true"><small>I Agree</small></i></span>
+              <input type="checkbox" name="checkbox" required />
+            </div>
+        </p>
+        <P>
+          I understand the importance of strong families as the cornerstone of peace, and will do my best to practice filial piety as a son or daughter and respect and care as a brother or sister in preparation for love and fidelity in marriage.
+          <div class="col_half">
+            <div class="input_field"> <span><i aria-hidden="true"><small>I Agree</small></i></span>
+              <input type="checkbox" name="checkbox" required />
+            </div>
+        </P>
+        <p>
+          I support YSP’s Mission and will support YSP projects and activities to contribute to sustainable peace.
+          <div class="col_half">
+            <div class="input_field"> <span><i aria-hidden="true"><small>I Agree</small></i></span>
+              <input type="checkbox" name="checkbox" required />
+            </div>
+        </p>
+      </section>
+      <hr/>
+        <div class="form_wrapper">
+          <div class="form_container">
+            <div class="title_container">
+            </div>
+            <div class="row clearfix">
+              <div class="">
+                <!--the form for the join us  modal-->
+                <form>
+                  <div class="input_field g1g"> <span>Email <i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                    <input class="g2g" type="email" name="email" placeholder="Email" required/>
+                  </div>
+                  <div class="input_field g1g"> <span>Phone Number <i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                    <input class="g2g" type="tel" name="phone" placeholder="phone" size="50"  required />
+                  </div>
+                  <div class="row clearfix g1g">
+                    <div class="col_half">
+                      <div class="input_field"> <span>Name <i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                        <input class="g2g" type="text" name="name" placeholder="First Name" size="50" required />
+                      </div>
+                    </div>
+                    <div class="col_half g1g">
+                      <div class="input_field"> <span>Last Name<i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                        <input class="g2g" type="text" name="name" placeholder="Last Name" size="50" required />
+                      </div>
+                    </div>
+                  </div>
+                      <div class="input_field radio_option text-dark g1g">
+                      <input type="radio" name="radiogroup1" id="rd1">
+                      <label for="rd1">Male</label>
+                      <input type="radio" name="radiogroup1" id="rd2">
+                      <label for="rd2">Female</label>
+                      </div>
+                      <div class="input_field g1g"> <span>Date of Birth<i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                        <input type="date" name="birthday" placeholder="Date of birth" required />
+                      </div>
+                      <div class="input_field g1g"> <span>Country<i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                        <input class="g2g" type="country" name="country" placeholder="Country" size="50"  required />
+                      </div>
+                      <div class="input_field g1g"> <span>State<i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                        <input class="g2g" type="state" name="state" placeholder="State" size="50"  required />
+                      </div>
+                      <div class="input_field g1g"> <span>City<i aria-hidden="true" class=" text-danger"> (Required)</i></span>
+                        <input class="g2g" type="city" name="city" placeholder="City" size="50" required />
+                      </div>
+                    <div class="input_field g1g checkbox_option text-dark">
+                      <input type="checkbox" id="cb1">
+                  <label for="cb1">I agree with terms and conditions</label>
+                    </div>
+                    <div class="input_field g1g checkbox_option text-dark">
+                      <input type="checkbox" id="cb2">
+                  <label for="cb2">I want to receive the newsletter</label>
+                    </div>
+                  <input class="button btn btn-primary" type="submit" value="Register" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#"><i>privacy policies and terms of services</i></a>
+      </div>
+    </div>
+  </div>
+</div>
                 </div>
                     <img class="img-fluid w-50 d-none d-sm-block" src="image/youth.png" alt="">
                 </div>
             </div>
     </section>
 
-    <!--Newsletter-->
-    <section class="bg-primary text-light p-5">
-        <div class="container">
-            <div class="d-md-flex justify-content-between">
-                <h3 class="mb-3 mb-md-0">Signup for Newsletter</h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username">
-                    <button class="btn btn-dark btn-lg" type="button">Button</button>
-                  </div>
-            </div>
-        </div>
-    </section>
 
     <!--Quote-->
     <section class="text-dark mt-5 text-center">
@@ -103,9 +220,10 @@
     </section>
 
     <!--boxes-->
-    <section class="p-5" id="whatwedo">
+    
+    <section class="p-1" id="whatwedo">
         <div class="container">
-            <h2 class="text-center p-5 mt-4">WHAT WE DO</h2>
+            <h2 class="text-center pb-3 pt-4 mt-4">WHAT WE DO</h2>
             <div class="row text-center">
                 <div class="mma col-md mb-3">
                     <div class="card bg-dark text-light">
@@ -160,19 +278,20 @@
                 </div>
             </div>
             <div>
-                <a href="#" class="btn btn-primary align-item-center">Find our more</a>
+                <a href="/wedo/wedo.html" class="btn btn-primary align-item-center">Find our more</a>
             </div>
         </div>
+      </div>
     </section>
 
     <!--Learn section-->
-    <section id="learn" class="p-5 mb-0">
+    <section id="learn" class="p-2 mb-0">
         <div class="container">
             <div class="row align-item-center justify-content-between">
                 <div class="col-md">
                     <img src="image/SDG.png" class="image-fluid w-100" alt="">
                 </div>
-                <div class="col-md pt-5 px-5">
+                <div class="col-md pt-5">
                     <h2>TAKE ACTION</h2>
                     <h4>Youth and Students for Peace supports the Sustainable Development Goal</h4>
                     <p>
@@ -189,7 +308,7 @@
                          are the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face, including poverty, inequality,
                          climate change, environmental degradation, peace and justice.</p>
                     </p>
-                    <a href="#" class="btn btn-light mt-3">
+                    <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" class="btn btn-light mt-3">
                        <i class="bi bi-chevron-right">Learn more</i> 
                     </a>
                 </div>
@@ -198,7 +317,8 @@
     </section>
     
     <!--Highlight activities-->
-    <section class="p-5">
+    <div class="double">
+    <section class="p-2">
         <div class="container">
             <h2 class="text-center pb-5">FEATURED EVENTS AND HIGHLIGHTS</h2>
             <div class="row text-center">
@@ -252,9 +372,9 @@
     </section>
     <!--Logo section-->
     <section>
-        <div class="container text-center bg-light p-2 py-4">
+        <div class="container text-center bg-light p-2 py-4 cq">
             <h3 class="text-secondary text-center pb-3">Affiliated Organization</h3>
-            <div class="row justify-content-between">
+            <div class="row justify-content-between d-flex flex-wrap">
               <div class="col nn1">
                 <img src="logo/download__1_-removebg-preview.png" alt=""  data-bs-toggle="modal" data-bs-target="#one"
                 class="image-fluid w-75">
@@ -276,12 +396,13 @@
                     <h4 class=" text-primary">WFWP</h4>
                 </h6>
               </div>
-              <div class="col p-4 nn4">
+              <div class="col nn4">
                 <img src="logo/united-nations-logo.png" alt=""  data-bs-toggle="modal" data-bs-target="#four"
                  class="image-fluid w-100" >
                 <h6 class="text-gray">
-                    <h4 class=" text-primary">United Nations</h4>
-                </6>
+                    <h4 class=" text-primary un">United Nations</h4>
+                    <h4 class="ngn text-primary">UN</h4>
+                </h6>
               </div>
             </div>
           </div>
@@ -317,7 +438,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-            <a href="#" class="text-light">visit site</a>
+            <a href="https://familyfedihq.org/about-us/" class="text-light">visit site</a>
           </button>
         </div>
       </div>
@@ -350,7 +471,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-                <a href="#" class="text-light">visit site</a>
+                <a href="https://www.upf.org/who-we-are" class="text-light">visit site</a>
               </button>
             </div>
           </div>
@@ -384,7 +505,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-            <a href="#" class="text-light">visit site</a>
+            <a href="https://www.wfwp.org/about-us" class="text-light">visit site</a>
           </button>
         </div>
       </div>
@@ -411,18 +532,32 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-                <a href="#" class="text-light">visit site</a>
+                <a href="https://www.un.org/en/about-us" class="text-light">visit site</a>
               </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!--Newsletter-->
+    <section class="bg-primary text-light p-3">
+        <div class="container">
+            <div class="d-md-flex justify-content-between">
+                <h3 class="mb-1 mb-md-0">Sign Up for Newsletter</h3>
+                <div class="input-group news-input">
+                    <input type="email" class="form-control" placeholder="Enter Email" aria-label="Recipient's username">
+                    <button class="btn btn-dark btn-lg" type="button">Enter</button>
+                  </div>
+            </div>
+        </div>
+    </section>
 
       <!--my footer-->
       <footer>
-        <div class="container-expand-lg text-center bg-dark text-light pt-5 px-4">
+        <div class="container-expand-lg text-center bg-dark text-light pt-2 px-4">
           <div class="d-flex justify-content-center">
-          <div class="d-flex flex-column p-5">
+          <div class="d-flex flex-column m-2">
             <h4 class="text-light" >SOCIAL</h4>
             <div class="ficnl d-flex flex-row">
               <i class="bi-facebook"></i>
@@ -433,24 +568,24 @@
             </div>
           </div>  
           </div>
-          <div class="yet d-flex justify-content-evenly flex-md-wrap">
-            <div class="d-flex flex-column text-start py-3">
-              <h4 class="text-light">MENU</h4>
-                <p class="fs-6"> News</p>
-                <p class="fs-6"> FAQ</p>
-                <p class="fs-6"> Join us</p>
-                <p class="fs-6"> About us</p>
-                <p class="fs-6"> Become a Partner</p>
+          <div class="yet d-flex justify-content-evenly flex-wrap-reverse-sm">
+            <div class="d-flex flex-column text-start py-3 w-50">
+              <h4 class=" ficnll text-light">MENU</h4>
+                <p class="fs6"> News</p>
+                <p class="fs6"> FAQ</p>
+                <p class="fs6"> Join us</p>
+                <p class="fs6"> About us</p>
+                <p class="fs6"> Become a Partner</p>
             </div>
-            <div class="d-flex flex-column text-start py-3">
+            <div class="d-flex flex-column text-start py-3 w-50">
               <h4 class="text-gray">CONTACT US</h4>
-              <div class="ficn d-flex flex-column">
+              <div class="ficn d-flex flex-column text">
                 <i class="bi-envelope-fill"> Email: <i>ysd.ng.internal@gmail.com</i></i>
                 <i class="bi-telephone-fill"> Phone: <i>(+234) 9028157484</i></i>
                 <i class="bi-telephone-fill"> Phone: <i>(+234) 09028157484</i></i>
               </div>
             </div>
-            <div class="d-flex flex-column text-center py-3 w-25">
+            <div class="d-flex flex-column text-center py-3 w-50 w-75">
               <button class="btn btn-warning btn-sm" type="button">Donate to support us</button>
               <p class="init pt-3">
                 Youth and Students for Peace (YSP) is a non-profit organization. Our goal is to be able to host and coordinate events and activities youth and students can participate in for little to no cost.
@@ -459,7 +594,7 @@
           </div>
         </div>
       </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </section>
   </body>
 </html>

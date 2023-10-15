@@ -1,0 +1,82 @@
+body::before{
+    display: block;
+    content: '';
+    height: 90px;
+}
+
+#mybody{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bg{
+    background-image: url(image/download.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px){
+ .news-input{
+    width:80px;
+ }
+}
+
+.logo{
+    width :180px;
+    margin-left: 5;
+}
+
+#nav-item1{
+    color: dodgerblue;
+}
+
+a.navlink:hover {
+    border-bottom: 2px solid dodgerblue;
+    border-top: 2px solid dodgerblue;
+}
+
+
+@media only screen and (min-width: 768px){
+    .logo{
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .ng{
+        display: none;
+    }
+}
+.bg{
+    background-image: url(/ysd-in/Immgee/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    font-size: 80px;
+    font-family: Lucida Console;
+}
+
+/*all the remaining body except the hero*/
+.all{
+    position: relative;
+    background-color: #d6e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100;
+}
+
+.tvid {
+    padding-top: 20px;
+    padding-bottom: 16px;
+    /* width: 10.................................................../////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////0; */
+}
+
+.by1{
+    border-radius: 15px;
+    padding-left:8px;
+    height: 345;
+    width: auto;
+}
+  
+

@@ -1,0 +1,43 @@
+body::before{
+    display: block;
+    content: '';
+    height: 90px;
+}
+
+#mybody{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 770px) {
+    .where{
+        font-size: xx-large;
+    }
+}
+
+.logo{
+    width :180px;
+    margin-left: 5;
+}
+
+@media only screen and (min-width: 768px){
+    .logo{
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .ng{
+        display: none;
+    }
+}
+
+.dtl{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lst li{
+    padding-bottom: 8px;
+}
